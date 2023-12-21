@@ -165,3 +165,7 @@ while True:
                         print('Invalid date format. Please enter the date in DD-MM-YYYY format.')
 
                 conservation.update_entry(name, species, age, zone, date_rescued)   
+
+    elif choice == '3':
+        name = input('Enter the name of the animal to delete: ')
+        conservation.delete_entry(name)
