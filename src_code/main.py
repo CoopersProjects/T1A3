@@ -51,3 +51,13 @@ def display_entries(self):
                       f'Date Rescued: {info["date_rescued"]}')
         else:
             print('The wildlife conservation is currently empty.')
+
+def search_by_zone(self, zone):
+        matching_entries = [(name, info) for name, info in self.entries.items() if str(info['zone']) == str(zone)]
+        if matching_entries:
+            print(f'Entries in Zone {zone}:')
+            for name, info in matching_entries:
+                print(f'Name: {name}, Species: {info["species"]}, Age: {info["age"]}, '
+                      f'Date Rescued: {info["date_rescued"]}')
+        else:
+            print(f'No entries found in Zone {zone}.')
