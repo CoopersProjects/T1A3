@@ -82,3 +82,7 @@ def display_menu():
 
 conservation = WildlifeConservation()
 conservation.load_entries()  # Load entries from file at the beginning
+
+while True:
+    display_menu()
+    choice = input('Enter your choice (1-6): ')
