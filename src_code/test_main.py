@@ -65,4 +65,3 @@ def test_update_entry(conservation_instance):
 
 
 # Requires terminal command: pytest -s test_main.py
-# Note: This test will succeed on the first attempt, but will fail to add new entry on a second run due to the name being taken by the first attempt (New test species).
