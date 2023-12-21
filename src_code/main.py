@@ -79,3 +79,6 @@ def display_menu():
     print('4. Display All Entries')
     print('5. Search by Zone')
     print('6. Exit')
+
+conservation = WildlifeConservation()
+conservation.load_entries()  # Load entries from file at the beginning
