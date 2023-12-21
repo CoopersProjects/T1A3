@@ -117,3 +117,51 @@ while True:
                 print('Invalid date format. Please enter the date in DD-MM-YYYY format.')
 
         conservation.add_entry(name, species, age, zone, date_rescued)
+
+    elif choice == '2':
+            name = input('Enter the name of the animal to update: ')
+            entry = conservation.entries.get(name)
+
+            if entry is not None:
+                print(f"Updating information for {name}:")
+
+                # Get existing values
+                current_species = entry.get('species')
+                current_age = entry.get('age')
+                current_zone = entry.get('zone')
+                current_date_rescued = entry.get('date_rescued')
+
+                # Asking for new values
+                species = input(f'Enter the new species ({current_species}) (press Enter to skip): ')
+                if species.strip() == '':
+                    species = current_species
+
+                age = None
+                zone = None
+                date_rescued = None
+
+                age_input = input(f'Enter the new age ({current_age}) (press Enter to skip): ')
+                if age_input.strip():
+                    try:
+                        age = int(age_input)
+                        if age < 0:
+                            print('Invalid input for age. Please enter a non-negative number.')
+                            age = None
+                    except ValueError:
+                        print('Invalid input for age. Please enter a valid number.')
+
+                zone_input = input(f'Enter the new zone ({current_zone}) (press Enter to skip): ')
+                if zone_input.strip():
+                    if zone_input.isdigit() and 1 <= int(zone_input) <= 6:
+                        zone = int(zone_input)
+                    else:
+                        print('Invalid input for zone. Please enter a number between 1 and 6.')
+
+                date_rescued_input = input(f'Enter the new date rescued ({current_date_rescued}) (DD-MM-YYYY, press Enter to skip): ')
+                if date_rescued_input.strip():
+                    try:
+                        date_rescued = datetime.strptime(date_rescued_input, '%d-%m-%Y').strftime('%d-%m-%Y')
+                    except ValueError:
+                        print('Invalid date format. Please enter the date in DD-MM-YYYY format.')
+
+                conservation.update_entry(name, species, age, zone, date_rescued)   
