@@ -172,3 +172,14 @@ while True:
 
     elif choice == '4':
         conservation.display_entries()
+    
+    elif choice == '5':
+        while True:
+            zone_input = input('Enter the zone to search (1-6): ')
+            if zone_input.isdigit() and 1 <= int(zone_input) <= 6:
+                zone = int(zone_input)
+                break  # So i can exit the loop if a valid zone is provided
+            else:
+                print('Sorry, that zone does not exist. Please enter a zone between 1 and 6.')
+
+        conservation.search_by_zone(zone)
