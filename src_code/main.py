@@ -61,3 +61,7 @@ def search_by_zone(self, zone):
                       f'Date Rescued: {info["date_rescued"]}')
         else:
             print(f'No entries found in Zone {zone}.')
+
+def save_entries(self):
+        with open(self.filename, 'w') as file:
+            json.dump(self.entries, file, indent=2)
