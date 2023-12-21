@@ -33,3 +33,8 @@ List of features in my application:
 --> Allows user to edit information if required, e.g. age increase.
 
 Error handling will also be covered by making sure that appropriate messages or information is displayed when an "unexpected entry" is provided.
+
+## R7: 
+For R7 I will link my monday.com project management photos. Here I used a checklist to tick off required parts of my features.
+
+## R8:
