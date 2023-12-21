@@ -169,3 +169,6 @@ while True:
     elif choice == '3':
         name = input('Enter the name of the animal to delete: ')
         conservation.delete_entry(name)
+
+    elif choice == '4':
+        conservation.display_entries()
