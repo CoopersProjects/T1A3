@@ -42,3 +42,12 @@ def delete_entry(self, name):
             self.save_entries()
         else:
             print(f'{name} is not in the conservation.')
+
+def display_entries(self):
+        if self.entries:
+            print('List of Wildlife Conservation Entries:')
+            for name, info in self.entries.items():
+                print(f'Name: {name}, Species: {info["species"]}, Age: {info["age"]}, Zone: {info["zone"]}, '
+                      f'Date Rescued: {info["date_rescued"]}')
+        else:
+            print('The wildlife conservation is currently empty.')
