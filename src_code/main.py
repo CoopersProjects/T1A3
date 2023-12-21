@@ -65,3 +65,8 @@ def search_by_zone(self, zone):
 def save_entries(self):
         with open(self.filename, 'w') as file:
             json.dump(self.entries, file, indent=2)
+
+def load_entries(self):
+        if os.path.exists(self.filename):
+            with open(self.filename, 'r') as file:
+                self.entries = json.load(file)
