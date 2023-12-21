@@ -35,3 +35,10 @@ def update_entry(self, name, species=None, age=None, zone=None, date_rescued=Non
         else:
             print(f'{Fore.RED}{name} is not in the conservation. Use Option 1 to add them, or check for possible spelling errors.{Style.RESET_ALL}')
 
+def delete_entry(self, name):
+        if name in self.entries:
+            del self.entries[name]
+            print(f'{name} has been released from the conservation.')
+            self.save_entries()
+        else:
+            print(f'{name} is not in the conservation.')
