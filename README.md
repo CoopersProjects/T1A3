@@ -37,4 +37,15 @@ Error handling will also be covered by making sure that appropriate messages or 
 ## R7: 
 For R7 I will link my monday.com project management photos. Here I used a checklist to tick off required parts of my features.
 
+My plan was to complete the major coding requirements by the 21st of December so that I could focus on compiling everything I need together and making sure I am happy with my work and have it organised. In order for that to happen, I created the project management page on monday.com and used it to tick off general goals that I wanted to have completed. I generally started each feature of my project with the goal of completing the method before moving on to using the method to write the code I wanted to run. Once that was complete, I tested that it worked which took a long time, especially with features such as the editing feature as I was having a recurring problem that I will mention in the slide-deck and video. I prioritised getting the features complete so that way I can move onto the other aspects of the work closer to the deadline. Below I have attached some photos of my management photos over time, however they are quite generalised as I was figuring out what I needed to do as I went along and then after learning what to do it was a lot of "rinse and repeating".
+
+![Progress_photo_1](/Resources/T1A3%20-%20P1.png)
+![Progress_photo_2](/Resources/T1A3%20-%20P2.png)
+![Progress_photo_3](/Resources/T1A3%20-%20P3.png)
+![Progress_photo_4](/Resources/T1A3%20-P4.png)
+![Progress_photo_5](/Resources/T1A3%20-P5.png)
+![Progress_photo_6](/Resources/T1A3%20-P6.png)
+![Progress_photo_7](/Resources/T1A3%20-P7.png)
+![Progress_photo_8](/Resources/T1A3-P8.png)
+
 ## R8:
