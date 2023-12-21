@@ -183,3 +183,10 @@ while True:
                 print('Sorry, that zone does not exist. Please enter a zone between 1 and 6.')
 
         conservation.search_by_zone(zone)
+    
+    elif choice == '6':
+        print('Thanks for using the Conservation System! Booting down... ')
+        break
+
+    else:
+        print('Sorry, that is not a listed option. Please enter a number between 1 and 6.')
