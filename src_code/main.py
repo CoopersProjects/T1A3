@@ -86,3 +86,34 @@ conservation.load_entries()  # Load entries from file at the beginning
 while True:
     display_menu()
     choice = input('Enter your choice (1-6): ')
+
+    if choice == '1':
+        name = input('Enter the name of the animal: ')
+        species = input('Enter the species: ')
+
+        # Use a loop to keep asking for age until a valid integer is provided
+        while True:
+            age_input = input('Enter the age: ')
+            try:
+                age = int(age_input)
+                break  # Exit the loop if int() conversion succeeds
+            except ValueError:
+                print('Invalid input for age. Please enter a valid number.')
+
+        while True:
+            zone_input = input('Enter the zone (1-6): ')
+            if zone_input.isdigit() and 1 <= int(zone_input) <= 6:
+                zone = int(zone_input)
+                break  # Exit the loop if a valid zone is provided
+            else:
+                print('Invalid input for zone. Please enter a number between 1 and 6.')
+
+        while True:
+            date_rescued_input = input('Enter the date rescued (DD-MM-YYYY): ')
+            try:
+                date_rescued = datetime.strptime(date_rescued_input, '%d-%m-%Y').strftime('%d-%m-%Y')
+                break  # Exit the loop if the date is successfully parsed
+            except ValueError:
+                print('Invalid date format. Please enter the date in DD-MM-YYYY format.')
+
+        conservation.add_entry(name, species, age, zone, date_rescued)
