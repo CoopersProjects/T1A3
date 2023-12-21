@@ -88,9 +88,9 @@ def display_menu():
     print('5. Search by Zone')
     print('6. Exit')
 
-
-conservation = WildlifeConservation()
-conservation.load_entries()  # Load entries from file at the beginning
+if __name__ == "__main__":
+    conservation = WildlifeConservation()
+    conservation.load_entries()  # Load entries from file at the beginning
 
 while True:
     display_menu()
