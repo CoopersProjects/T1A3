@@ -70,3 +70,12 @@ def load_entries(self):
         if os.path.exists(self.filename):
             with open(self.filename, 'r') as file:
                 self.entries = json.load(file)
+
+def display_menu():
+    print('\nWildlife Conservation Menu:')
+    print('1. Add Entry')
+    print('2. Update Entry')
+    print('3. Delete Entry')
+    print('4. Display All Entries')
+    print('5. Search by Zone')
+    print('6. Exit')
