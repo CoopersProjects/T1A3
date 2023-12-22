@@ -75,8 +75,21 @@ class WildlifeConservation:
 
     def load_entries(self):
         if os.path.exists(self.filename):
-            with open(self.filename, 'r') as file:
-                self.entries = json.load(file)
+            try:
+                with open(self.filename, 'r') as file:
+                    file_content = file.read()
+                    if file_content:
+                        self.entries = json.loads(file_content)
+                    else:
+                        # Handle the case where the file is empty
+                        self.entries = {}
+            except json.JSONDecodeError as e:
+                # To handle the case where the file contains invalid JSON
+                print(f"Error loading entries: {e}")
+                self.entries = {}
+        else:
+            self.entries = {}
+
 
 
 def display_menu():
