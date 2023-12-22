@@ -159,13 +159,17 @@ while True:
             zone = None
             date_rescued = None
 
-            age_input = input(f'Enter the new age ({current_age}) (press Enter to skip): ')
-            if age_input.strip():
+            valid_age = False
+            while not valid_age:
+                age_input = input(f'Enter the new age ({current_age}) (press Enter to skip): ')
+                if age_input.strip() == '':
+                    break  
                 try:
                     age = int(age_input)
                     if age < 0:
                         print('Invalid input for age. Please enter a non-negative number.')
-                        age = None
+                    else:
+                        valid_age = True
                 except ValueError:
                     print('Invalid input for age. Please enter a valid number.')
 
