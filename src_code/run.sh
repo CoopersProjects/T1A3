@@ -2,7 +2,7 @@
 
 # Check if Python is installed
 if ! command -v python3 &> /dev/null; then
-    echo "Python is not installed. Please install Python before running this script."
+    echo "Python is not installed. Please install Python before running this script. You can download it at python.org"
     exit 1
 fi
 
