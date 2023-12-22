@@ -79,3 +79,4 @@ pip install colorama pytest
 
 To use the program, you will require an operating system (Mac, Windows, Linux), python3 and enough disc space to store animal data.
 
+EDIT: I have now created an executable file that skips all this. You can find it by following up to step 5. You need to download the zip, open it and the file is called "main". You will then be able to instantly run it. Please note that this should be completed after the run.sh commands have checked you have everything installed correctly.
