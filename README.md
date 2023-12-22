@@ -48,4 +48,34 @@ My plan was to complete the major coding requirements by the 21st of December so
 ![Progress_photo_7](/Resources/T1A3%20-P7.png)
 ![Progress_photo_8](/Resources/T1A3-P8.png)
 
-## R8:
+## R8: (Mac OS)
+To install my application, you will need to go to github.com using this link: https://github.com/CoopersProjects/T1A3. 
+
+Once you are there you will be presented with a public page containing the application, from there you will need to:
+
+1. Go to the green "Code" button.
+2. Click on it and select the "download as zip" option. (or you can select the open with github desktop option if you'd prefer.)
+3. Download the zip file.
+4. Once downloaded, you will have to open the zip file, to reveal the coding folder. 
+5. You can now open the folder in vscode (or other coding software) by right clicking and opening at terminal --> code .
+6. You will then be able to view my program on the "main.py" section. 
+7. To run this you will need to open the terminal and type "python3 src_code/main.py"
+8. This will run the program, in which case you will be able to access it and use it.
+
+Note: To use my program, you will require the installation of python. You can check whether you have python by running my run.sh file in the folder (once opened, you will need to type "./run.sh" and that will notify you if you need to install it.) It will also check if you have the relevant imported python packages that I have utilised. 
+
+If you do have python, you may be required to update it to the latest version to successfully view and run the program.
+
+My program has the following dependencies: 
+- Python3
+- Colorama 
+- Pytest
+
+These will need to be installed. If required you can use: 
+
+```
+pip install colorama pytest
+```
+
+To use the program, you will require an operating system (Mac, Windows, Linux), python3 and enough disc space to store animal data.
+
